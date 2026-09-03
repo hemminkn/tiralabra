@@ -1,0 +1,3 @@
+Viikko 1
+--------
+Aloitin miettimään aihetta, ja kiinnostuin koneoppimisen aiheista. Erityisesti musiikin generointi kuulosti aiheelta, jonka haluaisin toteuttaa. Aikani kului miettiessä ja etsiessä ohjelman toteutustapaa. Löysin blogikirjoituksia ja git-repoja, joissa ollaan toteutettu samankaltaisia ohjelmia ja luin niitä.

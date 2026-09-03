@@ -1,3 +1,13 @@
 Määrittelydokumentti
 --------------------
+Tässä määrittelydokumentissa määrittelen harjoitustyöni kurssilla Aineopintojen harjoitustyö: Algoritmit ja tekoäly. Opiskelen Helsingin yliopistossa tietojenkäsittelytieteen kandiohjelmassa (TKT).
 
+Aihe ja toteutus
+----------------
+Aion toteuttaa musiikin generaattorin, joka generoi musiikkia sille annetun nuotin perusteella. Hyödynnän generoinnissa Markovin ketjua, joka määrittää uuden tilan edellisten tilojen perusteella, eli tässä tapauksessa se valitsee seuraavan nuotin sille annetun viimeisen nuotin perusteella.
+Käytän koulutusaineistona Pythonin mido-kirjastoa, josta löytyy valmiita .mid-tiedostoja, joita syöttää ohjelmalle.
+
+Ohjelmointikielet
+-----------------
+Toteutan harjoitustyön Pythonilla.
+Vertaisarvioinnissa pystyn arvioimaan töitä, jotka ovat kirjoitettu Pythonilla.

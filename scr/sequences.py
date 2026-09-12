@@ -11,7 +11,7 @@ def get_sequence(filename):
 		for msg in track:
 			if msg.type == "note_on":
 				sequence.append(msg.note)
-	print(sequence)
+	return(sequence)
 
 if __name__ == "__main__":
 	get_sequence(sys.argv[1])

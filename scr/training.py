@@ -20,7 +20,7 @@ class Train:
 				state = tuple(notes[i:i+self.order])
 				next_note = notes[i+self.order]
 
-				#tähän trie eli trie.insert(state, next_note)
+				trie.insert(state, next_note)
 
 if __name__ == "__main__":
 	t = Train(sys.argv[1], 2)

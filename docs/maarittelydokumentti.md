@@ -4,19 +4,19 @@ Tässä määrittelydokumentissa määrittelen harjoitustyöni kurssilla Aineopi
 
 Aihe ja toteutus
 ----------------
-Aion toteuttaa musiikin generaattorin, joka generoi musiikkia sille annetun nuotin perusteella. Hyödynnän generoinnissa Markovin ketjua, joka määrittää uuden tilan edellisten tilojen perusteella, eli tässä tapauksessa se valitsee seuraavan nuotin sille annetun viimeisen nuotin perusteella.
-Käytän koulutusaineistona Pythonin mido-kirjastoa, josta löytyy valmiita .mid-tiedostoja, joita syöttää ohjelmalle. Nuottien esiintymistodennäköisyyksille tulee rakentaa todennäköisyysmatriisi, jonka todennäköisyyksien perusteella seuraava nuotti valitaan.
-Markovin ketjujen pahin mahdollinen tilavaatimus on O(N^(k+1)), jossa k on edellisten nuottien määrä, jotka vaikuttavat seuraavaan ja N on uniikkien nuottien määrä. Tässä harjoitustyössä kuitenkin yksinkertaisuuden vuoksi k=1 ja yritän pitää N<10.
+Aion toteuttaa musiikin generaattorin, joka generoi musiikkia sille annetun nuotin perusteella. Hyödynnän generoinnissa Markovin ketjua, joka määrittää uuden tilan edellisten tilojen perusteella, eli tässä tapauksessa se valitsee seuraavan nuotin sille annetun asteen perusteella. Esimerkiksi jos aste on 2, seuraavat nuotit valitaan kahden viimeisen perusteella
+Käytän koulutusaineistona Pythonin mido-kirjastoa, joka lukee midi-tiedostoja ja jonka avulla midi-tiedoston sisällön voi syöttää ohjelmalle. Ensisijaisena tietorakenteena käytän Trie-puuta, johon tallennan sekä nuotit että niiden frekvenssit. Trien avulla tietoihin on helppo päästä käsiksi ilman suurta viivettä.
+Markovin ketjujen pahin mahdollinen tilavaatimus on O(N^(k+1)), jossa k on edellisten nuottien määrä, jotka vaikuttavat seuraavaan ja N on uniikkien nuottien määrä.
 Mitä aikavaatimukseen tulee, koulutusvaiheen ei tulisi kestää pitkään, noin O(L*k), jossa L on opetusdatan pituus eli tässä tilanteessa nuottien määrä. Musiikin generoinnin eli uuden nuotin valinta tulisi olemaan O(N) tai O(1) per nuotti.
 
 Ohjelmointikielet
 -----------------
-Toteutan harjoitustyön Pythonilla.
+Toteutan harjoitustyön ensisijaisesti Pythonilla, käyttöliittymässä mahdollisesti HTML ja css.
 Vertaisarvioinnissa pystyn arvioimaan töitä, jotka ovat kirjoitettu Pythonilla.
 
 Muita huomioita
 ---------------
-Dokumennoinnin, kuten viikkoraportit, kirjoitan suomeksi, mutta koodi ja commit-viestit kirjoitan selvyyden vuoksi englanniksi.
+Dokumennoinnin, kuten viikkoraportit, kirjoitan suomeksi, mutta koodi ja commit-viestit kirjoitan selvyyden vuoksi englanniksi. Käyttöliittymässä käytän myös mahdollisesti englantia.
 
 Lähteet
 -------

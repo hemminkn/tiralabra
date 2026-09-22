@@ -2,9 +2,9 @@
 A program for generating music made for the Helsinki University course Algorithms and Artificial Intelligence.
 
 ## Documentation
-[Specification document](docs/maarittelydokumentti.md)
-[First weekly report](docs/viikkoraportit/viikkoraportti1.md)
-[Second weekly report](docs/viikkoraportit/viikkoraportti2.md)
+[Specification document](docs/maarittelydokumentti.md)  
+[First weekly report](docs/viikkoraportit/viikkoraportti1.md)  
+[Second weekly report](docs/viikkoraportit/viikkoraportti2.md)  
 [Third weekly report](docs/viikkoraportit/viikkoraportti3.md)
 
 ## Installation and starting up

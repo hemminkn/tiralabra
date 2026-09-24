@@ -10,6 +10,7 @@ class TrieNode:
 class Trie:
     def __init__(self):
         self.root = TrieNode()
+        self.start_states = []
 
     def insert(self, state, next_note):
         current = self.root

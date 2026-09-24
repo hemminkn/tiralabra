@@ -24,7 +24,7 @@ def generate(trie):
 
     for note in generated:
         track.append(Message("note_on", note=note, velocity=64, time=32))
-        track.append(Message("note_off", note=note, velocity=0, time=32))
+        track.append(Message("note_off", note=note, velocity=0, time=70))
 
     mid.tracks.append(track)
     mid.save("generated_song.mid")

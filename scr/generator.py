@@ -1,24 +1,33 @@
 #!/usr/bin/python
 
 import random
-import trie
+from mido import Message, MidiFile, MidiTrack
 
-def generate(degree):
+def generate(trie):
 
-midi = []
-help_list = []
+first = random.choice(trie.start_states)
+state = first
+generated = list(first)
 
-first = random.choice(trie) #i know this is not correct
-
-#after the first we generate until len(help_list) == degree
-#and then we use that as the start state to start generating the next progressions
-# and the window moves until the midi-list has enough notes to make a midi file
-
-while len(midi) < 100:
+while len(generated) < 100:
 
     successors, weights = trie.find_next(state)
     if not successors:
         break
 
     next_note = random.choices(successors, weights=weights, k=1)[0]
+    generated.append(next_note)
 
+    state = state[1:]+(next_note,)
+
+mid = MidiFile()
+track = MidiTrack()
+
+for note in generated:
+    track.append(Message("note_on", note=note, velocity=64, time=32))
+    track.append(Message("note_off", note=note, velocity=0, time=32))
+
+mid.tracks.append(track)
+midi.save("generated_song.mid")
+
+return MidiFile("generated_song.mid")

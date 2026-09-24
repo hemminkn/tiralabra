@@ -12,6 +12,7 @@ def generate(trie):
 
         successors, weights = trie.find_next(state)
         if not successors:
+            print(f"Couldn't find more successors, song has {len(generated)} notes")
             break
 
         next_note = random.choices(successors, weights=weights, k=1)[0]

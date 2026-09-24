@@ -11,9 +11,21 @@ def index():
     return render_template("index.html", title="Generator")
 
 #testing
-m = MarkovChain("Minors", 2)
+key = input("Choose key, minors/majors: ")
+degree = int(input("Choose degree: "))
+
+if key == "minors":
+    m = MarkovChain("Minors", degree)
+if key == "majors":
+    m = MarkovChain("Majors", degree)
+else:
+    print("Try again")
+    pass
+
 m.train()
-generate(m.trie)
+file = generate(m.trie)
+
+print("Midi-file is ready!")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -8,5 +8,13 @@ A program for generating music made for the Helsinki University course Algorithm
 [Third weekly report](docs/viikkoraportit/viikkoraportti3.md)
 
 ## Installation and starting up
-Clone the repository into your own computer
-You'll need to install the packages flash and mido. If your version of Python doesn't support them, make a virtual environment.
+1. Clone the repository into your own computer  
+2. You'll need to install the packages flash and mido. If your version of Python doesn't support them, make a virtual environment.  
+Start the virtual environment by writing:  
+``
+source venv/bin/activate
+``  
+3. Test the program in app.py in your terminal, for ex.  
+``
+python3 app.py
+``

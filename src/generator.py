@@ -12,7 +12,8 @@ def generate(trie):
 
         successors, weights = trie.find_next(state)
         if not successors:
-            print(f"Couldn't find more successors, song has {len(generated)} notes")
+            print()
+            print(f"Couldn't find more successors, song has {len(generated)} notes.")
             break
 
         next_note = random.choices(successors, weights=weights, k=1)[0]
@@ -30,4 +31,9 @@ def generate(trie):
     mid.tracks.append(track)
     mid.save("generated_song.mid")
 
+    print()
+    print("Generated notes:")
+    print()
+    print(generated)
+    print()
     return MidiFile("generated_song.mid")

@@ -14,6 +14,7 @@ A program for generating music made for the Helsinki University course Algorithm
 Start the virtual environment by writing:  
 ```
 python3 -m venv venv
+install mido
 source venv/bin/activate
 cd src
 python3 app.py

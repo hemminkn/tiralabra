@@ -21,3 +21,9 @@ python3 app.py
 ```  
 3. When the app has ran, you can find the midi-file in the same directory. :)  
 4. Have fun with the app!
+
+## Directions for testing
+After you've done the aforementioned steps, you can test the trie data structure by moving into the root directory and running  
+```
+python3 -m src.tests.trie_test
+```

@@ -14,10 +14,16 @@ A program for generating music made for the Helsinki University course Algorithm
 Start the virtual environment by writing:  
 ```
 python3 -m venv venv
-install mido
 source venv/bin/activate
+install mido
 cd src
 python3 app.py
 ```  
 3. When the app has ran, you can find the midi-file in the same directory. :)  
 4. Have fun with the app!
+
+## Directions for testing
+After you've done the aforementioned steps, you can test the trie data structure by moving into the root directory and running  
+```
+python3 -m src.tests.trie_test
+```

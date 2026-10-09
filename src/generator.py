@@ -3,6 +3,7 @@
 import random
 from mido import Message, MidiFile, MidiTrack
 
+#generates a sequence of notes
 def generate(trie):
     first = random.choice(trie.start_states)
     state = first

@@ -12,6 +12,7 @@ class Trie:
         self.root = TrieNode()
         self.start_states = []
 
+    #inserts a state and its following note into trie
     def insert(self, state, next_note):
         current = self.root
 
@@ -25,6 +26,7 @@ class Trie:
 
         current.next_notes[next_note] += 1
 
+    #finds the next note(s) following the given state
     def find_next(self, state):
         current = self.root
 

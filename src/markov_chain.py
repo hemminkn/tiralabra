@@ -13,6 +13,7 @@ class MarkovChain:
 		else:
 			self.files = Path("../midi/Majors").glob("*.mid")
 
+	#trains chain based on the key chosen by the user
 	def train(self):
 		for file in self.files:
 			notes = get_sequence(file)

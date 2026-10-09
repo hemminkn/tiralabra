@@ -4,6 +4,7 @@ from mido import MidiFile
 
 import sys
 
+#creates a sequence of notes from the given file
 def get_sequence(filename):
 	sequence = []
 	mid = MidiFile(filename)

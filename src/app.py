@@ -2,6 +2,7 @@ from markov_chain import MarkovChain
 from generator import generate
 import sys
 
+#creates user interface
 while True:
 
     print()

@@ -7,6 +7,8 @@ A program for generating music made for the Helsinki University course Algorithm
 [Second weekly report](docs/viikkoraportit/viikkoraportti2.md)  
 [Third weekly report](docs/viikkoraportit/viikkoraportti3.md)  
 [Fourth weekly report](docs/viikkoraportit/viikkoraportti4.md)  
+[Fifth weekly report](docs/viikkoraportit/viikkoraportti5.md) 
+[Sixth weekly report](docs/viikkoraportit/viikkoraportti6.md) 
 
 ## Installation and starting up
 1. Clone the repository into your own computer  

@@ -1,4 +1,4 @@
-# 3.viikko
+# 5.viikko
 
 Tällä viikolla oli ensimmäinen vertaisarviointi, jota tein maanantaina ja tiistaina.  Itse projektin kannalta tällä viikolla oli aika aloittaa yksikkötestien tekeminen. Suunnittelin yksikkötestejä jo viime viikolla ja keskiviikkona tapaamisessa ohjaajan kanssa puhuimme niistä lisää. Perjantaina sain mielestäni tärkeimmät yksikkötestit valmiiksi. Testasin esimerkiksi polun muodostamista sekä painojen/frekvenssien päivittämistä tms.  
 Ensi viikolla haluaisin miettiä lisää, tarvitseeko ohjelmani muitakin testejä.  

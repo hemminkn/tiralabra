@@ -37,4 +37,4 @@ def generate(trie):
     print()
     print(generated)
     print()
-    return MidiFile("generated_song.mid")
+    return generated

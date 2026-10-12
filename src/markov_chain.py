@@ -1,7 +1,7 @@
 import sys
-from sequences import get_sequence
+from src.sequences import get_sequence
 from pathlib import Path
-from trie import Trie
+from src.trie import Trie
 
 class MarkovChain:
 	def __init__(self, key, order):
@@ -9,9 +9,9 @@ class MarkovChain:
 		self.order = order
 
 		if key == "Minors":
-			self.files = Path("../midi/Minors").glob("*.mid")
+			self.files = Path("midi/Minors").glob("*.mid")
 		else:
-			self.files = Path("../midi/Majors").glob("*.mid")
+			self.files = Path("midi/Majors").glob("*.mid")
 
 	#trains chain based on the key chosen by the user
 	def train_notes(self, notes):

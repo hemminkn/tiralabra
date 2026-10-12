@@ -1,5 +1,5 @@
-from markov_chain import MarkovChain
-from generator import generate
+from src.markov_chain import MarkovChain
+from src.generator import generate
 import sys
 
 #creates user interface

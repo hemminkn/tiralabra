@@ -29,4 +29,6 @@ After you've done the aforementioned steps, you can test the trie data structure
 python3 -m src.tests.trie_test
 python3 -m src.tests.markov_test
 python3 -m src.tests.generator_test
+python3 -m src.tests.end_to_end_test
+
 ```

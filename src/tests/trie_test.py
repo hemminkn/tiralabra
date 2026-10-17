@@ -6,16 +6,37 @@ class TestTrie(unittest.TestCase):
     def setUp(self):
         self.trie = Trie()
 
-    #test if inserting creates a path in trie
-    def test_insert_makes_path(self):
+    #test if trie's structure is correct
+    def test_trie_structure(self):
 
-        self.trie.insert((60, 62), 64)
+        self.trie.insert((60, 61), 62)
+        self.trie.insert((60, 63), 66)
+        self.trie.insert((60, 63), 65)
+        self.trie.insert((62, 64), 65)
+        self.trie.insert((62, 64), 64)
+        self.trie.insert((62, 63), 60)
+        self.trie.insert((62, 63), 61)
+        self.trie.insert((63, 66), 61)
+        self.trie.insert((63, 66), 62)
+        self.trie.insert((63, 64), 65)
 
-        self.assertIn(60, self.trie.root.children)
+        #10 60 3 61 1 62 1 63 2 66 1 65 1
+        #62 4 64 2 65 1 64 1 63 2 60 1 61 1
+        #63 3 66 2 61 1 62 1 64 1 65 1
 
-        node = self.trie.root.children[60]
+        def tree_traversal(self):
+            result = []
 
-        self.assertIn(62, node.children)
+            def dfs(node):
+                for note, child in node.children.items():
+                    result.append((note, child.frequency))
+                    dfs(child)
+
+            dfs(self.root)
+
+            result = self.trie.tree_traversal()
+
+            self.assertEqual([result, [10, 60, 3, 61, 1, 62, 1, 63, 2, 66, 1, 65, 1, 62, 4, 64, 2, 65, 1, 64, 1, 63, 2, 60, 1, 61, 1, 63, 3, 66, 2, 61, 1, 62, 1, 64, 1, 65, 1]])
 
     #test if frequency updates when adding the same sequence
     def test_frequency_updates(self):
@@ -50,8 +71,8 @@ class TestTrie(unittest.TestCase):
         self.assertEqual(set(successors), {64, 67})
         self.assertEqual(set(weights), {2, 1})
 
-    #test what happens when state is unknown/np successors
-    def test_without_successors(self):
+    #test what happens when state is unknown/no successors
+    def test_with_unknown_state(self):
 
         result = self.trie.find_next((1, 2))
 

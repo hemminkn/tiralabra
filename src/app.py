@@ -48,5 +48,5 @@ if key == "majors":
 m.train()
 generate(m.trie, file_name)
 
-print("Your midi-file is ready!")
+print("Your midi-file is ready, and you can find it from the generated_songs directory!")
 print()

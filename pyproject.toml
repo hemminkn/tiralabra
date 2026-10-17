@@ -13,9 +13,15 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest (>=9.1.1,<10.0.0)",
-    "coverage (>=7.16.2,<8.0.0)"
+    "coverage (>=7.16.2,<8.0.0)",
+    "pytest-cov (>=7.1.0,<8.0.0)"
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+
+[tool.coverage.run]
+source = ["src"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

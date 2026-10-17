@@ -4,7 +4,7 @@ import random
 from mido import Message, MidiFile, MidiTrack
 
 #generates a sequence of notes
-def generate(trie):
+def generate(trie, file_name):
     first = random.choice(trie.start_states)
     state = first
     generated = list(first)
@@ -30,7 +30,7 @@ def generate(trie):
         track.append(Message("note_off", note=note, velocity=0, time=70))
 
     mid.tracks.append(track)
-    mid.save("generated_song.mid")
+    mid.save(f"{file_name}.mid")
 
     print()
     print("Generated notes:")

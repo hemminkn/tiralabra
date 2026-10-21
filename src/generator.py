@@ -5,12 +5,12 @@ from mido import Message, MidiFile, MidiTrack
 from pathlib import Path
 
 #generates a sequence of notes
-def generate(trie, file_name):
+def generate(trie, song_length, file_name):
     first = random.choice(trie.start_states)
     state = first
     generated = list(first)
 
-    while len(generated) < 100:
+    while len(generated) < song_length:
 
         successors, weights = trie.find_next(state)
         if not successors:

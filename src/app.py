@@ -31,6 +31,16 @@ while True:
         print("!!! Degree should be 1 or higher.")
         continue
     print()
+    song_length = input("Choose what length you wish the song to be: ")
+    try:
+        song_length = int(song_length)
+    except ValueError:
+        print("!!! Please input an integer.")
+        continue
+    if song_length <= 0:
+        print("!!! Song length should be 1 or higher.")
+        continue
+    print()
     file_name = input("Input what you want your generated song to be saved as: ")
     if len(file_name) == 0:
         print("!!! File name can not be empty.")
@@ -46,7 +56,7 @@ if key == "majors":
     m = MarkovChain("Majors", int(degree))
 
 m.train()
-generate(m.trie, file_name)
+generate(m.trie, song_length, file_name)
 
 print("Your midi-file is ready, and you can find it from the generated_songs directory!")
 print()

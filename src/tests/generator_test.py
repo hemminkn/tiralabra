@@ -13,7 +13,7 @@ class TestGenerator(unittest.TestCase):
 
         self.m.train_notes([60, 62, 45, 67, 68, 66, 64, 65, 60, 62, 55, 67, 68, 60])
 
-        generated = generate(self.m.trie, "generated_song")
+        generated = generate(self.m.trie, 100, "generated_song")
 
         sequences = []
 

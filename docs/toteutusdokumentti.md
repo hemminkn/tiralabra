@@ -1,7 +1,3 @@
-Ohjelman yleisrakenne
-
-Työn mahdolliset puutteet ja parannusehdotukset
-
 # Ohjelman yleisrakenne
 
 Musiikkigeneraattori generoi Markovin ketjujen avulla kappaleen käyttäjän antaman syötteen ohjeiden mukaisesti ja tallentaa sen midi-tiedostoksi. Markovin ketjujen toiminta perustuu siis siihen, että seuraava tila valitaan edellisten perusteella. Jos vaihtoehtoja on monia, seuraava tila arvotaan painotetusti. Tässä projektissa edelliset tilat eli nuottisekvenssit olen säästänyt trie-tietorakenteeseen, josta ohjelma ne poimii. Koulutuksessa käytetyt midi-tiedostot (kappaleet) ovat saatu ilmaisista kirjastoista Githubista, jotka ovat sitten tallennettu trie-tietorakenteeseen.  

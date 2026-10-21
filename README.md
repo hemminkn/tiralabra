@@ -3,6 +3,7 @@ A program for generating music made for the Helsinki University course Algorithm
 
 ## Documentation
 [Specification document](docs/maarittelydokumentti.md)  
+[Implementation document](docs/toteutusdokumentti.md)  
 [First weekly report](docs/viikkoraportit/viikkoraportti1.md)  
 [Second weekly report](docs/viikkoraportit/viikkoraportti2.md)  
 [Third weekly report](docs/viikkoraportit/viikkoraportti3.md)  

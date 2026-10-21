@@ -15,11 +15,10 @@ class MarkovChain:
 
 	#trains chain based on the key chosen by the user
 	def train_notes(self, notes):
-		start_state = tuple(notes[:self.order])
-		self.trie.start_states.append(start_state)
 
 		for i in range(len(notes)-self.order):
 			state = tuple(notes[i:i+self.order])
+			self.trie.start_states.append(state)
 			next_note = notes[i+self.order]
 
 			self.trie.insert(state, next_note)
